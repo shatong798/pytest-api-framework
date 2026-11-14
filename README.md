@@ -17,11 +17,28 @@
 4. **Allure 结构化报告**：使用 `@allure.step` 标记测试步骤，报告极具可读性。
 
 ## 📸 测试报告展示
-*(这里留空，稍后放截图)*
+![Allure测试报告总览](https://github.com/user-attachments/assets/d16b7f97-ea35-4d8a-b7b7-19314c34f4e5)
+![Allure测试步骤详情](https://github.com/user-attachments/assets/857e49d6-802b-4fce-8a04-56a7b00ee8e9)
+
 
 ## 💻 本地运行指南
 
 **1. 克隆项目到本地:**
 ```bash
   git clone https://github.com/shatong798/pytest-api-framework.git
+```
+**2. 安装依赖包:**
+
+```bash
+  pip install -r requirements.txt
+```
+**3. 运行测试并生成报告:**
+
+```bash
+  pytest
+```
+**4. 查看可视化报告:**
+
+```bash
+  allure serve report
 ```
