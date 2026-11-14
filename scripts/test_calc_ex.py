@@ -13,13 +13,13 @@ class TestCaleEx:
         print(f"结果是：{result}")
         assert result == -1
 
-    def test_03_mul(self):
+    def test_03_mul(self, pre_op1):
         result = calc.mul(1,2)
         print(f"结果是：{result}")
         assert result == 2
 
-    def test_04_div(self):
+    def test_04_div(self, pre_op1):
         result = calc.div(1,2)
         print(f"结果是：{result}")
-        assert result == 1
+        assert result == 0.5
 
