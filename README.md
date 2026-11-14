@@ -27,3 +27,18 @@
 ```bash
   git clone https://github.com/shatong798/pytest-api-framework.git
 ```
+**2. 安装依赖包:**
+
+```bash
+  pip install -r requirements.txt
+```
+**3. 运行测试并生成报告:**
+
+```bash
+  pytest
+```
+**4. 查看可视化报告:**
+
+```bash
+  allure serve report
+```
