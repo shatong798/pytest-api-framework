@@ -23,5 +23,5 @@
 
 **1. 克隆项目到本地:**
 ```bash
-git clone 你的新仓库链接.git
+  git clone https://github.com/shatong798/pytest-api-framework.git
 ```
