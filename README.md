@@ -17,7 +17,9 @@
 4. **Allure 结构化报告**：使用 `@allure.step` 标记测试步骤，报告极具可读性。
 
 ## 📸 测试报告展示
-*(这里留空，稍后放截图)*
+![Allure测试报告总览]<img width="1146" height="618" alt="allure-report-overview" src="https://github.com/user-attachments/assets/d16b7f97-ea35-4d8a-b7b7-19314c34f4e5" />
+![Allure测试步骤详情]<img width="1146" height="618" alt="allure-report-steps" src="https://github.com/user-attachments/assets/857e49d6-802b-4fce-8a04-56a7b00ee8e9" />
+
 
 ## 💻 本地运行指南
 
