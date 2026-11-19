@@ -3,11 +3,13 @@ import requests
 import threading
 import time
 from mock_server.app import app
+from config.settings import get_config
 
 @pytest.fixture(scope="session")
 def mock_server():
+    cfg = get_config()
     server = threading.Thread(
-        target=lambda: app.run(host='localhost', port=1234, debug=False, use_reloader=False),
+        target=lambda: app.run(host=cfg["mock_host"], port=cfg["mock_port"], debug=False, use_reloader=False),
         daemon=True,
     )
     server.start()

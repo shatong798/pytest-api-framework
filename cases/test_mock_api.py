@@ -1,11 +1,12 @@
 import requests
 import pytest
 import allure
+from config.settings import get_config
 
 
 class TestMockAPI:
     # 定义你本地服务的地址
-    base_url = "http://localhost:1234"
+    base_url = get_config()["base_url"]
 
     @allure.title("测试本地 Mock 服务：新增区域并验证")
     def test_add_and_verify_area(self, mock_server):
