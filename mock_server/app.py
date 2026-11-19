@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from config.settings import get_config
 
 # 1. 实例化一个 Flask 应用（这就是你的后端服务器）
 app = Flask(__name__)
@@ -57,6 +58,6 @@ def add_area():
 
 # 3. 启动服务器
 if __name__ == '__main__':
-    # 我们故意用 1234 端口，完美复现你视频里的场景
-    print("后端服务器正在启动，监听端口 1234...")
-    app.run(host='0.0.0.0', port=1234, debug=True)
+    cfg = get_config()
+    print(f"后端服务器正在启动，监听 {cfg['mock_host']}:{cfg['mock_port']}...")
+    app.run(host=cfg["mock_host"], port=cfg["mock_port"], debug=True)
