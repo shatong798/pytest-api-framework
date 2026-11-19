@@ -8,7 +8,7 @@ class TestMockAPI:
     base_url = "http://localhost:1234"
 
     @allure.title("测试本地 Mock 服务：新增区域并验证")
-    def test_add_and_verify_area(self):
+    def test_add_and_verify_area(self, mock_server):
         # 1. 准备数据
         payload = {"areaName": "发财", "priority": "999"}
 

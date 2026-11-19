@@ -1,5 +1,18 @@
 import pytest
 import requests
+import threading
+import time
+from mock_server.app import app
+
+@pytest.fixture(scope="session")
+def mock_server():
+    server = threading.Thread(
+        target=lambda: app.run(host='localhost', port=1234, debug=False, use_reloader=False),
+        daemon=True,
+    )
+    server.start()
+    time.sleep(2)
+    yield
 
 # 添加fixture装饰器，控制测试用例的前置和后置执行范围
 @pytest.fixture(scope="class")
