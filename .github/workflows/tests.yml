@@ -18,11 +18,11 @@ jobs:
     steps:
       # ① 把仓库代码拉到这台机器上
       - name: 检出代码
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # ② 装 Python
       - name: 安装 Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: "3.15"
 
