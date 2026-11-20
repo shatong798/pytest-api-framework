@@ -4,6 +4,9 @@ import pytest
 import allure
 from config.settings import get_config
 from pathlib import Path
+from utils.logger import get_logger
+
+logger = get_logger(__name__)
 
 # 项目根目录（cases 的上一级）
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -36,3 +39,4 @@ class TestMockAPI:
             res_list = requests.get(f"{self.base_url}/area/listarea", timeout=5)
             data_list = res_list.json()["data"]
             assert any(item["areaName"] == case["payload"]["areaName"] for item in data_list)
+            logger.info(f"列表返回: {res_list.json()}")

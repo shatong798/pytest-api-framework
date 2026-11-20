@@ -1,5 +1,8 @@
 import allure
 from api.hitokoto import HitokotoAPI
+from utils.logger import get_logger
+
+logger = get_logger(__name__)
 
 
 class TestHitokoto:
@@ -25,6 +28,6 @@ class TestHitokoto:
 
         allure.attach(data['hitokoto'], name="获取到的句子", attachment_type=allure.attachment_type.TEXT)
         # 可以打印，也可以不打印（pytest 默认捕获 print）
-        print(f"获取到的句子：{data['hitokoto']}")
+        logger.info(f"获取到的句子：{data['hitokoto']}")
 
 
