@@ -123,6 +123,8 @@ allure serve report
 
 ## 📸 测试报告展示
 
-![Allure测试报告总览](https://github.com/user-attachments/assets/d16b7f97-ea35-4d8a-b7b7-19314c34f4e5)
+![Allure测试报告总览](<img width="1146" height="618" alt="allure-report-overview" src="https://github.com/user-attachments/assets/51b6d700-8738-4bd6-a6a5-347a699c1585" />
+)
 
-![Allure测试步骤详情](https://github.com/user-attachments/assets/857e49d6-802b-4fce-8a04-56a7b00ee8e9)
+![Allure测试步骤详情](<img width="1146" height="618" alt="allure-report-steps" src="https://github.com/user-attachments/assets/6bab21e1-23e4-4139-95f8-2d584b9fc93a" />
+)
